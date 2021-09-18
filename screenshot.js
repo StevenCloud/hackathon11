@@ -70,7 +70,19 @@ for (const [key, value] of Object.entries(elems))
 {
 
 }
+
+DONT FORGET: change to content.js in manifest.json
+
 */
+
+console.log('content go')
+
+chrome.runtime.onMessage.addListener(gotMessage);
+
+function gotMessage(message, sender, sendResponse) {
+    console.log(message.txt);
+}
+
 
 let request = new XMLHttpRequest();
 request.open("GET", "https:jsonplaceholder.typicode.com/users");
