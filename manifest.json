@@ -14,9 +14,14 @@
     ],
     "browser_action": {
         "default_icon": {
-            "48": "/images/bucc.png"
+            "48": "/Images/bucc.png"
         }
     },
+
+    "icons": {
+        "48": "/Images/bucc.png"
+    },
+
     "permissions": ["storage"],
     "browser_action": {
         "default_popup": "popup.html"
