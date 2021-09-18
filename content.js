@@ -12,6 +12,9 @@ document.onmousemove = function(e){
     var x = e.pageX;
     var y = e.pageY;
     e.target.title = "X is "+x+" and Y is " +y;
+    elementMouseIsOver = document.elementFromPoint(x,y);
+
+console.log(elementMouseIsOver);
 };
 
 var MOUSE_VISITED_CLASSNAME = 'crx_mouse_visited';
