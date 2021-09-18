@@ -14,12 +14,12 @@
     ],
     "browser_action": {
         "default_icon": {
-            "48": "/Images/bucc.png"
+            "48": "Images/bucc.png"
         }
     },
 
     "icons": {
-        "48": "/Images/bucc.png"
+        "48": "Images/bucc.png"
     },
 
     "permissions": ["storage"],
