@@ -16,4 +16,7 @@ document.onmousemove = function(e){
 
 var MOUSE_VISITED_CLASSNAME = 'crx_mouse_visited';
 
-document.addEventListener('mousemove', 
+document.addEventListener('mousemove', function (m) {
+    let srcElement = m.srcElement
+}
+
