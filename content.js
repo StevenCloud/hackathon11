@@ -1,13 +1,19 @@
-chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        if(request.message === "clicked_browser_action") {
-            var links = document.getElementsByTagName('a');
+console.log('content go')
 
-            var i = 0;
-            while(links[i]['href'] === ''){
-                i++;
-            }
-            chrome.runtime.sendMessage({"message": "open_new_tab", "url": links[i]['href']});
-        }
-    }
-);
+chrome.runtime.onMessage.addListener(gotMessage);
+
+function gotMessage(message, sender, sendResponse) {
+    console.log(message.txt);
+}
+
+var t_links = document.getElementsByTagName('a');
+
+document.onmousemove = function(e){
+    var x = e.pageX;
+    var y = e.pageY;
+    e.target.title = "X is "+x+" and Y is " +y;
+};
+
+var MOUSE_VISITED_CLASSNAME = 'crx_mouse_visited';
+
+document.addEventListener('mousemove', 
