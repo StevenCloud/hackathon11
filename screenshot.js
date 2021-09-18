@@ -108,6 +108,9 @@ fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
 */
 
 var container = document.getElementById("htmltoimage");; // full page 
+
+document.addEventListener('click', function(e){
+
 html2canvas(container,{allowTaint : true}).then(function(canvas) {
 
     var link = document.createElement("a");
@@ -116,6 +119,7 @@ html2canvas(container,{allowTaint : true}).then(function(canvas) {
     link.href = canvas.toDataURL("image/png");
     link.target = '_blank';
     link.click();
+});
 });
 
 
