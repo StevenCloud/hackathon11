@@ -77,11 +77,10 @@ DONT FORGET: change screenshot.js to content.js in manifest.json
 
 console.log('content go')
 
-
-document.onmousemove = function(e){
+document.addEventListener('click', function(e){
 
 let request = new XMLHttpRequest();
-request.open("GET", "https:jsonplaceholder.typicode.com/users");
+request.open("GET", "https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ");
 request.send();
 request.onload = () => {
     console.log(request);
@@ -92,4 +91,4 @@ request.onload = () => {
         console.log("b r u h")
     }
 }
-}
+});
