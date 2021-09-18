@@ -2,29 +2,18 @@
     "name" : "Page Preview alex3's",
     "version": "1.0",
     "manifest_version": 2,
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
     "background":{
-        "service_worker": "background.js"
+        "scripts": ["background.js"]
     },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"]
-        }
-        
-    ],
+    "permissions": ["activeTab"],
     "browser_action": {
-        "default_icon": {
-            "48": "Images/bucc.png"
-        }
-    },
-
-    "icons": {
-        "48": "Images/bucc.png"
-    },
-
-    "permissions": ["storage"],
-    "browser_action": {
-        "default_popup": "popup.html"
+        "default_icon": "testpic.png"
     }
 
 }
