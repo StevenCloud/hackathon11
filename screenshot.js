@@ -86,8 +86,9 @@ request.onload = () => {
         console.log("hey");
     }
     else{
-        console.log("b r u h")
+        console.log("yo yoyo ")
     }
 }
 });
+//yo yoyo 
 //https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
