@@ -71,7 +71,7 @@ for (const [key, value] of Object.entries(elems))
 
 }
 
-DONT FORGET: change to content.js in manifest.json
+DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
 
@@ -83,6 +83,7 @@ function gotMessage(message, sender, sendResponse) {
     console.log(message.txt);
 }
 
+document.onmousemove = function(e){
 
 let request = new XMLHttpRequest();
 request.open("GET", "https:jsonplaceholder.typicode.com/users");
@@ -96,4 +97,4 @@ request.onload = (){
         console.log("b r u h")
     }
 }
-
+}
