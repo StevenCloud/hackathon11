@@ -1,3 +1,4 @@
+/*
 console.log('content go')
 
 chrome.runtime.onMessage.addListener(gotMessage);
@@ -24,3 +25,4 @@ document.addEventListener('mousemove', function (m) {
     let srcElement = m.srcElement
 }
 */
+
