@@ -1,4 +1,4 @@
-/*
+
 console.log('content go')
 
 chrome.runtime.onMessage.addListener(gotMessage);
