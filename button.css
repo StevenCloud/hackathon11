@@ -1,11 +1,11 @@
 button {
-    height: 48px;
-    width: 48px;
+    height: 128px;
+    width: 128px;
     outline: none;
     margin: 10px;
     border: none;
     border-radius: 2px;
-    background-image: url(/Images/bucc.png) /* 48x48 */;
+    background-image: url(/Images/bucc.png) /* 128x128 */;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 0px 0px;
