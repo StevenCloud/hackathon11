@@ -1,1 +1,1 @@
-"askdas"
+alert('Hello World')
