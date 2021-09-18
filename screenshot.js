@@ -92,7 +92,7 @@ request.onload = () => {
 }
 });
 */
-
+document.addEventListener('click', function(e){
 fetch("https://jsonplaceholder.typicode.com/users")
 .then(response => {
     return response.json();
@@ -100,6 +100,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .then(users => {
     console.log(users);
 });
+}
 
 
 
