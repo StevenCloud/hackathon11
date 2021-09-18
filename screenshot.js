@@ -1,5 +1,7 @@
 //preview.js
 
+npm install html2canvas
+
 
 /*
 def get_screenshot(params):
@@ -92,16 +94,29 @@ request.onload = () => {
 }
 });
 */
+
+/*
 document.addEventListener('click', function(e){
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
 .then(response => {
-    return response.json();
+    return response.jpeg();
 })
 .then(users => {
     console.log(users);
 });
 });
+*/
 
+var container = document.getElementById("htmltoimage");; // full page 
+html2canvas(container,{allowTaint : true}).then(function(canvas) {
+
+    var link = document.createElement("a");
+    document.body.appendChild(link);
+    link.download = "html_image.png";
+    link.href = canvas.toDataURL("image/png");
+    link.target = '_blank';
+    link.click();
+});
 
 
 //https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
