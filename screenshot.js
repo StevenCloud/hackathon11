@@ -100,7 +100,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .then(users => {
     console.log(users);
 });
-}
+});
 
 
 
