@@ -75,11 +75,10 @@ DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
 
-
 document.addEventListener('click', function(e){
 
 let request = new XMLHttpRequest();
-request.open("GET", "https:jsonplaceholder.typicode.com/users");
+request.open("GET", "https://jsonplaceholder.typicode.com/users");
 request.send();
 request.onload = () => {
     console.log(request);
@@ -91,3 +90,4 @@ request.onload = () => {
     }
 }
 });
+//https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
