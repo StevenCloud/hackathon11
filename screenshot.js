@@ -106,7 +106,7 @@ fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
 
 var container = document.getElementById("htmltoimage");; // full page 
 
-document.addEventListener('click', function(e){
+document.addEventListener('mouseover', function(e){
 
 html2canvas(container,{allowTaint : true}).then(function(canvas) {
 
