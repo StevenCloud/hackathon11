@@ -1,8 +1,5 @@
 //preview.js
 
-npm install html2canvas
-
-
 /*
 def get_screenshot(params):
     headers = {"Content-type": "application/x-www-form-urlencoded",
