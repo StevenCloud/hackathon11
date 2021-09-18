@@ -14,9 +14,7 @@
     ],
     "browser_action": {
         "default_icon": {
-            "16": "images/pen16.png",
-            "48": "images/pen48.png",
-            "128": "images/pen128.png"
+            "48": "/images/bucc.png"
         }
     },
     "permissions": ["storage"],
