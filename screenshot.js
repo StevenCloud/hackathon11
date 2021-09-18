@@ -78,7 +78,7 @@ request.send();
 request.onload = (){
     console.log(request);
     if(request.status === 200){
-        console.log(JSON.parse(request.response));
+        console.log("hey");
     }
     else{
         console.log("b r u h")
