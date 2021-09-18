@@ -74,6 +74,7 @@ for (const [key, value] of Object.entries(elems))
 DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
+/*
 
 document.addEventListener('click', function(e){
 
@@ -90,4 +91,16 @@ request.onload = () => {
     }
 }
 });
+*/
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => {
+    return response.json();
+})
+.then(users => {
+    console.log(users);
+});
+
+
+
 //https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
