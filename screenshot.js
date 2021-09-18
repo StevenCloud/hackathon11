@@ -75,15 +75,8 @@ DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
 
-console.log('content go')
 
-chrome.runtime.onMessage.addListener(gotMessage);
-
-function gotMessage(message, sender, sendResponse) {
-    console.log(message.txt);
-}
-
-document.onmousemove = function(e){
+document.addEventListener('click', function(e){
 
 let request = new XMLHttpRequest();
 request.open("GET", "https:jsonplaceholder.typicode.com/users");
@@ -97,4 +90,4 @@ request.onload = () => {
         console.log("b r u h")
     }
 }
-}
+});
