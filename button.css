@@ -5,7 +5,10 @@ button {
     margin: 10px;
     border: none;
     border-radius: 2px;
-    background-color: red;
+    background-color: transparent;
+    background-image: https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Buc-ee%27s_beaver.svg/1920px-Buc-ee%27s_beaver.svg.png;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
   }
   
   button.current {
