@@ -10,11 +10,18 @@ function message(request, sender, response) {
         window.word = request.text;
     }
     if (request.id === 'dictionary_raw_info') {
-        console.log(request);
         console.log(request.text);
-        console.log(request.text[0]);
+        raw_txt = request.text;
+        def_idx = raw_txt.search('{"definition":')
+        def_txt = ''
 
+        for (var i=def_idx; i < raw_txt.length; i++) {
+            if (raw_txt[i] == ']') { break }
+            def_txt += raw_txt[i];
 
+        }
+        console.log(def_txt);
     }
+
 }
 
