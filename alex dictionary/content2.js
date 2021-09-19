@@ -10,10 +10,3 @@ window.addEventListener('mouseup', function mou_up() {
         chrome.runtime.sendMessage(msg)
     };
 });
-/*
-document.addEventListener('mouseover', function(event) {
-    var hoveredl = event.target; // hovered element
-    if (hoveredl.tagName !== 'A') { return; } // ignore non links
-    console.log(hoveredl.href); 
-});
-*/

@@ -1,8 +1,7 @@
 console.log('background ok');
 
-
-chrome.runtime.onMessage.addListener(message);
-window.definition = "test";
+chrome.runtime.onMessage.addListener(message); // listener for message
+window.definition = "test"; // defines 'global' variable for selected image
 window.word = "test"
 def_txt = ''
 var test_txt
