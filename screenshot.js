@@ -94,7 +94,7 @@ request.onload = () => {
 
 
 document.addEventListener('click', function(e){
-fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=my_api_key",
+fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=QQcB1QymVezLnDcbyozUFhSa4qIj0",
 {mode : 'no-cors'})
 .then(response => {
     console.log(response);
