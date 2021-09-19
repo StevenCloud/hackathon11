@@ -33,5 +33,11 @@ function messagefinal(request, sender, response) {
         document.getElementById('edit_this').innerHTML = request.text;
         document.getElementById('Word_edit').innerHTML = request.word;
         console.log(request.text);
+        
+        document.getElementById('button').addEventListener('click',play_audio);
+        function play_audio() {
+            var audio = new Audio(request.audio);
+            audio.play();
+        }
     }
 }

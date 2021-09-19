@@ -17,8 +17,20 @@ function message(request, sender, response) {
  
         def_txt = ''
         word_txt = ''
+        audio_url = ''
 
-        var p = 0
+        audio_idx = raw_txt.search('audio":"//');
+        var aud_ct = audio_idx + 10;
+        while (aud_ct < raw_txt.length) {
+            audio_url += raw_txt[aud_ct];
+            aud_ct += 1;
+            if (raw_txt[aud_ct] == '"'){
+                break
+            }
+        }
+        console.log(audio_url);
+        audio_url = 'https://' + audio_url;
+        var p = 0;
         while (p < raw_txt.length) {
         
             word_txt += raw_txt[p];
@@ -87,7 +99,8 @@ function message(request, sender, response) {
         final_definitions = {
             text : test_txt,
             id : 'def_ready',
-            word: word_txt
+            word: word_txt,
+            audio: audio_url
         }
         chrome.runtime.sendMessage(final_definitions);
         
