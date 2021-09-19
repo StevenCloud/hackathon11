@@ -1,5 +1,4 @@
-//preview.js
-
+//preview
 
 /*
 def get_screenshot(params):
@@ -74,6 +73,7 @@ for (const [key, value] of Object.entries(elems))
 DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
+/*
 
 document.addEventListener('click', function(e){
 
@@ -90,5 +90,26 @@ request.onload = () => {
     }
 }
 });
+<<<<<<< HEAD
 //yo yoyo 
 //https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
+=======
+*/
+
+
+document.addEventListener('click', function(e){
+fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=QQcB1QymVezLnDcbyozUFhSa4qIj0",
+{mode : 'no-cors'})
+.then(response => {
+    return response.json();
+})
+.then(json => {
+    console.log(json);
+});
+});
+
+
+
+//https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=my_api_key
+//https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
+>>>>>>> 5370b65e65422a8cd517b2aef845f29e47fa1ff4
