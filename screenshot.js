@@ -94,9 +94,9 @@ request.onload = () => {
 
 
 document.addEventListener('click', function(e){
-fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
+fetch("https://api.site-shot.com/?url=www.coolmathgames.com&userkey=YAAIEYKBJA26IZ6II5YQVXUJMI")
 .then(response => {
-    console.log(response.json());
+    return response.json();
 })
 .then(users => {
     console.log(users);
