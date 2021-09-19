@@ -11,7 +11,7 @@
         ]
     }],
     "background":{
-        "scripts": ["background2.js"]
+        "scripts": ["background2.js", "test21.js"]
     },
     "permissions": ["activeTab"],
     "browser_action": {
