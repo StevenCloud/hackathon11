@@ -1,5 +1,7 @@
 //preview.js
 
+import html2canvas from 'html2canvas';
+
 /*
 def get_screenshot(params):
     headers = {"Content-type": "application/x-www-form-urlencoded",
