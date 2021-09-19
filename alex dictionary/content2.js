@@ -6,9 +6,11 @@ window.addEventListener('mouseup', function mou_up() {
     console.log(selected_text);
     if (selected_text.length > 0) {
         let msg = {
-            text: selected_text
+            text: selected_text,
+            id: 'selected_word'
         };
         chrome.runtime.sendMessage(msg)
+        console.log(typeof window.definition);
     };
 });
 /*

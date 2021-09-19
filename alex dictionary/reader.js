@@ -1,5 +1,3 @@
-//reader
-
 let speech = new SpeechSynthesisUtterance();
 speech.lang = "en";
 
