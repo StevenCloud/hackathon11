@@ -94,7 +94,7 @@ request.onload = () => {
 
 
 document.addEventListener('click', function(e){
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=my_api_key")
 .then(response => {
     return response.json();
 })
