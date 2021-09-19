@@ -12,9 +12,8 @@ function message(request, sender, response) {
     if (request.id === 'dictionary_raw_info') {
         console.log(request);
         console.log(request.text);
-        console.log(request[0]);
-        console.log(request[0][0]);
-        console.log(request[1]);
+        console.log(request.text[0]);
+
 
     }
 }
