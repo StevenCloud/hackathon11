@@ -1,5 +1,4 @@
-//preview.js
-
+//preview
 
 /*
 def get_screenshot(params):
@@ -74,19 +73,12 @@ for (const [key, value] of Object.entries(elems))
 DONT FORGET: change screenshot.js to content.js in manifest.json
 
 */
+/*
 
-console.log('content go')
-
-chrome.runtime.onMessage.addListener(gotMessage);
-
-function gotMessage(message, sender, sendResponse) {
-    console.log(message.txt);
-}
-
-document.onmousemove = function(e){
+document.addEventListener('click', function(e){
 
 let request = new XMLHttpRequest();
-request.open("GET", "https:jsonplaceholder.typicode.com/users");
+request.open("GET", "https://jsonplaceholder.typicode.com/users");
 request.send();
 request.onload = () => {
     console.log(request);
@@ -97,4 +89,22 @@ request.onload = () => {
         console.log("b r u h")
     }
 }
-}
+});
+*/
+
+
+document.addEventListener('click', function(e){
+fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=QQcB1QymVezLnDcbyozUFhSa4qIj0",
+{mode : 'no-cors'})
+.then(response => {
+    return response.json();
+})
+.then(json => {
+    console.log(json);
+});
+});
+
+
+
+//https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=my_api_key
+//https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
