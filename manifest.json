@@ -6,10 +6,7 @@
         "matches": [
             "<all_urls>"
         ],
-        "js" : [
-            "screenshot.js"
-            //"content.js"
-        ]
+        "js" : ["content.js"]
     }],
     "background":{
         "scripts": ["background.js"]
