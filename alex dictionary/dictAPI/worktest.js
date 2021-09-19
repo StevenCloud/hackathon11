@@ -28,3 +28,5 @@ function setup(){
     }
     
 }
+//script src="popup.js"></script>
+//<script src="worktest.js"></script>
