@@ -94,7 +94,8 @@ request.onload = () => {
 
 
 document.addEventListener('click', function(e){
-fetch("https://api.site-shot.com/?url=www.coolmathgames.com&userkey=YAAIEYKBJA26IZ6II5YQVXUJMI",{mode : 'no-cors'})
+fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_id=12&width=640&height=480&key=my_api_key"//,{mode : 'no-cors'}
+)
 .then(response => {
     return response.json();
 })
