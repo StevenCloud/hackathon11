@@ -1,9 +1,5 @@
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("click-this").addEventListener("mouseover", setup);
-    
-});
+setup();
 
 function setup(){
     console.log('setup ok');
@@ -27,18 +23,14 @@ function setup(){
     }
     xhttp.open('GET', url, true);
     xhttp.send();
-/*
-    var request1 = new XMLHttpRequest();
-    request1.addEventListener("load",reqListener);
-    request1.open("GET", url);
-    request1.send();
     
-    window.definition = request1;
-    console.log(window.definition);
-    function reqListener(){
-        alert(request1.responseText);
-    }
-    */
+}
 
-    
+chrome.runtime.onMessage.addListener(messagefinal);
+
+function messagefinal(request, sender, response) {
+    if (request.id = 'def_ready') {
+        document.getElementById('edit_this').innerHTML = request.text;
+        console.log(request.text);
+    }
 }
