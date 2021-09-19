@@ -18,13 +18,7 @@ document.onmousemove = function(e){
 //console.log(elementMouseIsOver);
 };
 
-var MOUSE_VISITED_CLASSNAME = 'crx_mouse_visited';
-console.log(MOUSE_VISITED_CLASSNAME);
-/*
-document.addEventListener('mousemove', function (m) {
-    let srcElement = m.srcElement
-}
-*/
+
 
 
 
