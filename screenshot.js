@@ -98,8 +98,8 @@ fetch("https://api.browshot.com/api/v1/simple?url=http://mobilito.net/&instance_
 .then(response => {
     return response.json();
 })
-.then(users => {
-    console.log(users);
+.then(json => {
+    console.log(json);
 });
 });
 
