@@ -31,6 +31,7 @@ chrome.runtime.onMessage.addListener(messagefinal);
 function messagefinal(request, sender, response) {
     if (request.id = 'def_ready') {
         document.getElementById('edit_this').innerHTML = request.text;
+        document.getElementById('Word_edit').innerHTML = request.word;
         console.log(request.text);
     }
 }

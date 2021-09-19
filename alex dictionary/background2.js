@@ -14,25 +14,31 @@ function message(request, sender, response) {
     if (request.id === 'dictionary_raw_info') {
         console.log(request.text);
         raw_txt = request.text;
-        //def_idx = raw_txt.search('{"definition":')
-        //def_end_idx = raw_txt.search('","synonyms')
+ 
         def_txt = ''
+        word_txt = ''
+
+        var p = 0
+        while (p < raw_txt.length) {
+        
+            word_txt += raw_txt[p];
+            p += 1;
+            if (raw_txt[p] == ',') {
+                break
+            }
+        }
+        
+
         var regex1 = /{"definition"/gi, result, indices = [];
         while ( (result = regex1.exec(raw_txt)) ) {
             indices.push(result.index);
         }
-
+        
         var regex2 = /","synonyms/gi, result2, indix = [];
         while ( (result2 = regex2.exec(raw_txt)) ) {
             indix.push(result2.index);
         }
-        /*
-        for (var i=def_idx; i < (raw_txt.length+2); i++) {
-            if (i == def_end_idx) { break }
-            def_txt += raw_txt[i];
 
-        }
-        */
         let def_idxn = (indices.length);
         let def_idxnn = indix.length;
 
@@ -75,10 +81,13 @@ function message(request, sender, response) {
             k += 1
             test_txt = test_txt.replace('{"definition"', "Definition");
         }
+        word_txt = word_txt.replace('[{"word":',"Word : ");
+
         console.log(test_txt);
         final_definitions = {
             text : test_txt,
-            id : 'def_ready'
+            id : 'def_ready',
+            word: word_txt
         }
         chrome.runtime.sendMessage(final_definitions);
         
