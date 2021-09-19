@@ -1,6 +1,4 @@
-//preview.js
-
-import html2canvas from 'html2canvas';
+//preview
 
 /*
 def get_screenshot(params):
@@ -94,7 +92,7 @@ request.onload = () => {
 });
 */
 
-/*
+
 document.addEventListener('click', function(e){
 fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
 .then(response => {
@@ -104,23 +102,8 @@ fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
     console.log(users);
 });
 });
-*/
 
 
-var container = document.getElementById("htmltoimage");; // full page 
-
-document.addEventListener('mouseover', function(e){
-
-html2canvas(container,{allowTaint : true}).then(function(canvas) {
-
-    var link = document.createElement("a");
-    document.body.appendChild(link);
-    link.download = "html_image.png";
-    link.href = canvas.toDataURL("image/png");
-    link.target = '_blank';
-    link.click();
-});
-});
 
 
 //https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ
