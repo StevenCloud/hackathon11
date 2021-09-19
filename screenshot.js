@@ -94,7 +94,7 @@ request.onload = () => {
 
 
 document.addEventListener('click', function(e){
-fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ",{mode : 'no-cors'})
+fetch("https://api.site-shot.com/?url=www.com&userkey=HQKRAKBKRARAAJBKYEIAAQ")
 .then(response => {
     console.log(response.json());
 })
