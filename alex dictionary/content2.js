@@ -9,7 +9,7 @@ window.addEventListener('mouseup', function mou_up() {
             text: selected_text,
             id: 'selected_word'
         };
-        document.getElementById('print_this').innerHTML = selected_text;
+        document.getElementById("print_this").innerHTML = selected_text;
         chrome.runtime.sendMessage(msg)
         console.log(typeof window.definition);
     };
