@@ -24,8 +24,7 @@ function setup(){
     request1.send();
     
     function reqListener(){
-        var bruh = request1.responseText;
-        
+        alert(request1.responseText);
     }
     
 }
