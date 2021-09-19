@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name" : "alex's dictionary",
     "version": "1.0",
@@ -20,4 +21,28 @@
         "default_title": "Looks up a definition"
     }
 
+=======
+{
+    "name" : "alex's dictionary",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js" : [
+            "content2.js", "reader.js"
+        ]
+    }],
+    "background":{
+        "scripts": ["background2.js", "test21.js"]
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": "testpic.png",
+        "default_popup": "dictAPI/index.html",
+        "default_title": "Looks up a definition"
+    }
+
+>>>>>>> 2af27cd1f275805295bbf133109320b946c2525e
 }

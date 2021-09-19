@@ -1,3 +1,4 @@
+/*
 let speech = new SpeechSynthesisUtterance();
 speech.lang = "en";
 
@@ -10,3 +11,4 @@ document.addEventListener("click", () => {
     speech.text = test;
     window.speechSynthesis.speak(speech);
   });
+  */
