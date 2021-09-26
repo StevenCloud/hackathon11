@@ -1,4 +1,5 @@
 # hackathon11
 
-This is the Read Me:
-Current plan is to build a Chrome extension that provides a page preview when the user hovers their mouse over a link for x seconds.
+
+Chrome extension that provides the definition of a highligted word on any webpage. 
+It is also able to define short idioms or phrases, as well as some words in foreign languages.
